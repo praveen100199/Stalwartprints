@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  height: auto;
 }
 
 .navbar {
@@ -11,12 +12,11 @@
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  margin-top: -28px;
   margin-left: -120px;
 }
 
 .navbar{
-  box-shadow: 0 0 25px 10px #eac300;
+  box-shadow: 0 0 100px 20px #eac300;
 }
 
 ul {
@@ -40,6 +40,11 @@ li a span:hover{
 .material-symbols-outlined {
   font-size: 25px;
   padding: 0px 15px 0px;
+  color: black;
+}
+
+.material-symbols-outlined:hover {
+  color: gray
 }
 
 .login {
@@ -107,4 +112,5 @@ li a span:hover{
   display: flex;
   width: 220px;
   margin-right: -100px;
+  color: black;
 }
