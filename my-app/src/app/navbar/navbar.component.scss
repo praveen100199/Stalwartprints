@@ -30,6 +30,11 @@ li {
 
 li a span {
   font-size: large;
+  color: rgb(30, 28, 28);
+}
+
+li a span:hover{
+  color: gray
 }
 
 .material-symbols-outlined {
