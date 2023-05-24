@@ -22,13 +22,22 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
+import { CatalogueComponent } from './catalogue/catalogue.component';
+import { AccessoriesComponent } from './accessories/accessories.component';
+import { HighlightsComponent } from './highlights/highlights.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { OurCustomersComponent } from './our-customers/our-customers.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CarouselComponent
+    CarouselComponent,
+    CatalogueComponent,
+    AccessoriesComponent,
+    HighlightsComponent,
+    OurCustomersComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +58,8 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
     MdbScrollspyModule,
     MdbTabsModule,
     MdbTooltipModule,
-    MdbValidationModule
+    MdbValidationModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
