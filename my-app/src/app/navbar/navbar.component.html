@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
+
+  <body>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -18,7 +20,7 @@
         <ul class="nav navbar-nav" style="display: inline" >
           <li>
             <a href ="#">
-              <span mat-button [matMenuTriggerFor]="tshirts">T-shirts</span>
+              <span mat-button [matMenuTriggerFor]="tshirts">T-SHIRTS</span>
               <mat-menu #tshirts="matMenu">
                 <button mat-menu-item [matMenuTriggerFor]="polyster">
                   Polyster
@@ -66,7 +68,7 @@
           </li>
           <li>
             <a href="#">
-              <span mat-button [matMenuTriggerFor]="shirts">Shirts</span>
+              <span mat-button [matMenuTriggerFor]="shirts">SHIRTS</span>
 
               <mat-menu #shirts="matMenu">
                 <button mat-menu-item [matMenuTriggerFor]="polycotton">
@@ -95,7 +97,7 @@
           </li>
           <li>
             <a href="#">
-              <span mat-button [matMenuTriggerFor]="hoodies">Hoddies</span>
+              <span mat-button [matMenuTriggerFor]="hoodies">HOODIES</span>
 
               <mat-menu #hoodies="matMenu">
                 <button mat-menu-item [matMenuTriggerFor]="withzip">
@@ -125,7 +127,7 @@
           </li>
           <li>
             <a href="#">
-              <span mat-button [matMenuTriggerFor]="accessories">Accessories</span>
+              <span mat-button [matMenuTriggerFor]="accessories">ACCESSORIES</span>
               <mat-menu #accessories="matMenu">
                 <button mat-menu-item>Caps</button>
                 <button mat-menu-item>Bags</button>
@@ -153,5 +155,6 @@
         </div>
       </div>
     </nav>
-    <marquee behavior="alternate" direction="right">  <h2>Use STALWART25 Coupon to get more 25% OFF</h2> </marquee>
+    <marquee behavior="alternate" direction="right">  <h3>Use STALWART25 Coupon to get more 25% OFF</h3> </marquee>
+</body>
 </html>
