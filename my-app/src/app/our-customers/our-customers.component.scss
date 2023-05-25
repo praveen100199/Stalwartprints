@@ -66,11 +66,13 @@ img:hover{
 }
 
 .slider::before{
+    position: absolute;
 	left: 0;
 	top: 0;
 }
 
 .slider::after{
+    position: absolute;
 	right: 0;
 	top: 0;
 	transform: rotateZ(180deg);

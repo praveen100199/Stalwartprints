@@ -27,6 +27,7 @@ import { AccessoriesComponent } from './accessories/accessories.component';
 import { HighlightsComponent } from './highlights/highlights.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { OurCustomersComponent } from './our-customers/our-customers.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { OurCustomersComponent } from './our-customers/our-customers.component';
     CatalogueComponent,
     AccessoriesComponent,
     HighlightsComponent,
-    OurCustomersComponent
+    OurCustomersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

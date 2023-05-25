@@ -7,16 +7,4 @@ import { Component } from '@angular/core';
 })
 export class HighlightsComponent {
 
-  images = [  
-    { img: "./assets/accessories-badges.jpg" },  
-    { img: "./assets/accessories-caps.png" },  
-    { img: "./assets/accessories-cups.webp" },  
-    { img: "./assets/accessories-badges.jpg" },  
-    { img: "./assets/accessories-caps.png" },  
-    { img: "./assets/accessories-cups.webp" },
-    { img: "./assets/accessories-badges.jpg" },  
-    { img: "./assets/accessories-caps.png" },  
-    { img: "./assets/accessories-cups.webp" }  
-  ];
-
 }

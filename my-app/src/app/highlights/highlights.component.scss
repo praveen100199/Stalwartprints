@@ -1,0 +1,55 @@
+h1 {
+	color:black;
+	text-align: center;
+}
+
+.slider{
+	height: 250px;
+	margin: auto;
+	position: relative;
+	width: 80%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.slide-track{
+	display: flex;
+	width: calc(250px*6);
+	animation: scroll 30s linear infinite;
+}
+
+.slide-track:hover{
+	animation-play-state: paused;
+}
+
+@keyframes scroll {
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px * 3));
+	}
+}
+
+
+.slide{
+	height: 200px;
+	width: 800px;
+	display: flex;
+	align-items: center;
+	padding:0px 30px;
+	perspective: 100px;
+}
+
+img{
+	width: 400px;
+    max-height: 200px;
+	transition: transform 1%;
+	padding-left: 10px;
+}
+
+img:hover{
+	transform: translateZ(20px);
+}
+
