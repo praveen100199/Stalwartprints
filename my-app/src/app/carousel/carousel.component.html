@@ -8,7 +8,7 @@
     rel="stylesheet"
   />
 </head>
-<div class="carousel-container" *ngIf="images && images.length > 0">
+<div class="carousel-container" *ngIf="images && images.length > 0" style="background-color: #fff;">
   <img
     *ngFor="let image of images; let i = index"
     [src]="image.imageSrc"
