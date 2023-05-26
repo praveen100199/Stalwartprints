@@ -1,35 +1,42 @@
-<mdb-carousel [controls]="true" [indicators]="false" [dark]="true" [animation]="'fade'">
-  <mdb-carousel-item>
-    <img
-      src= "./assets/signdayimg1.png"
-      class="d-block w-100"
-      alt="Signature Day image"
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h4>VNR VJIET, Hyderabad</h4>
-      <p>Get Signature Day T-shirts Just for RS 170/-</p>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <img
-    src= "./assets/signdayimg2.png"
-      class="d-block w-100"
-      alt="Signature Day image"
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h4>VITS, Hyderabad</h4>
-      <p>We give the best quality...</p>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <img
-    src= "./assets/signdayimg3.png"
-      class="d-block w-100"
-      alt="Signature Day image" id="signimg3"
-    />
-    <div class="carousel-caption d-none d-md-block">
-      <h4>BVRIT, Narsapoor</h4>
-      <p>We provide Services across Hyderabad</p>
-    </div>
-  </mdb-carousel-item>
-</mdb-carousel>
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet"
+  />
+</head>
+<div class="carousel-container" *ngIf="images && images.length > 0">
+  <img
+    *ngFor="let image of images; let i = index"
+    [src]="image.imageSrc"
+    [alt]="image.imageAlt"
+    [ngClass]="{ 'image-active': selectedIndex === i }"
+    class="fader"
+  />
+  <div class="carousel-dot-container" *ngIf="indicators">
+    <span
+      class="dot"
+      *ngFor="let dot of images; let i = index"
+      [ngClass]="{ active: selectedIndex === i }"
+      (click)="selectImage(i)"
+    >
+    </span>
+  </div>
+  <button
+    *ngIf="controls"
+    class="btn-carousel btn-prev"
+    (click)="onPrevClick()"
+  >
+    <mat-icon class="icon-carousel icon-prev" id="left_arrow">keyboard_arrow_left</mat-icon>
+  </button>
+  <button
+    *ngIf="controls"
+    class="btn-carousel btn-next"
+    (click)="onNextClick()"
+  >
+    <mat-icon class="icon-carousel icon-next" id="right_arrow">keyboard_arrow_right</mat-icon>
+  </button>
+</div>

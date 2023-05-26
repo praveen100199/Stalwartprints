@@ -1,0 +1,67 @@
+footer{
+    min-height: 721px;
+    background-color: #000;
+    color: #d7d0d0;
+    font-size:14px;
+    padding: 60px 40px 20px 40px;
+    margin: 0px auto;
+}
+
+#stalwartcontent{
+    margin-top: 30px;
+}
+
+#payments{
+    margin-top: 40px;
+    font-weight: 800;
+    font-family: inherit;
+}
+#payments-info{
+    width: 600px;
+}
+
+.fab{
+    font-size: large;
+}
+
+.fa-facebook-f:hover{
+    color: rgb(119, 119, 255);
+}
+
+.fa-twitter:hover{
+    color: rgb(0, 0, 168);
+}
+
+.fa-google:hover{
+    color: rgba(255, 129, 11, 0.93);
+}
+
+.fa-instagram:hover{
+    color: rgba(255, 14, 163, 0.782);
+}
+
+.fa-linkedin:hover{
+    color: rgb(119, 253, 255);
+}
+
+.fa-whatsapp:hover{
+    color: rgb(4, 125, 0);
+}
+
+#products p:hover
+{
+    color:  #eac300;
+}
+#useful-links p:hover{
+    color:  #eac300;
+}
+
+#contacts p:hover{
+    color:  #eac300;
+}
+
+#copyright{
+    margin-top: 40px;
+    font-family: inherit;
+    font-size: smaller;
+}

@@ -25,9 +25,11 @@ import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { CatalogueComponent } from './catalogue/catalogue.component';
 import { AccessoriesComponent } from './accessories/accessories.component';
 import { HighlightsComponent } from './highlights/highlights.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { OurCustomersComponent } from './our-customers/our-customers.component';
 import { FooterComponent } from './footer/footer.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { BestSellersComponent } from './best-sellers/best-sellers.component';
 
 
 @NgModule({
@@ -39,7 +41,8 @@ import { FooterComponent } from './footer/footer.component';
     AccessoriesComponent,
     HighlightsComponent,
     OurCustomersComponent,
-    FooterComponent
+    FooterComponent,
+    BestSellersComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +64,9 @@ import { FooterComponent } from './footer/footer.component';
     MdbTabsModule,
     MdbTooltipModule,
     MdbValidationModule,
-    SlickCarouselModule
+    MatButtonModule,
+    MatIconModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
