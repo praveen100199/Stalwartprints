@@ -30,6 +30,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BestSellersComponent } from './best-sellers/best-sellers.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { BestSellersComponent } from './best-sellers/best-sellers.component';
     HighlightsComponent,
     OurCustomersComponent,
     FooterComponent,
-    BestSellersComponent
+    BestSellersComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
