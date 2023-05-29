@@ -37,6 +37,7 @@ import { CottonTshirtsComponent } from './t-shirts/cotton-tshirts/cotton-tshirts
 import { PoloTshirtsComponent } from './t-shirts/polo-tshirts/polo-tshirts.component';
 import { ShirtsComponent } from './shirts/shirts.component';
 import { HoodiesComponent } from './hoodies/hoodies.component';
+import { OtherItemsComponent } from './accessories/other-items/other-items.component';
 
 
 @NgModule({
@@ -56,7 +57,8 @@ import { HoodiesComponent } from './hoodies/hoodies.component';
     CottonTshirtsComponent,
     PoloTshirtsComponent,
     ShirtsComponent,
-    HoodiesComponent
+    HoodiesComponent,
+    OtherItemsComponent
   ],
   imports: [
     BrowserModule,
