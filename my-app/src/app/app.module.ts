@@ -31,6 +31,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BestSellersComponent } from './best-sellers/best-sellers.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { TShirtsComponent } from './t-shirts/t-shirts.component';
+import { PolysterTshirtsComponent } from './t-shirts/polyster-tshirts/polyster-tshirts.component';
+import { CottonTshirtsComponent } from './t-shirts/cotton-tshirts/cotton-tshirts.component';
+import { PoloTshirtsComponent } from './t-shirts/polo-tshirts/polo-tshirts.component';
+import { ShirtsComponent } from './shirts/shirts.component';
+import { HoodiesComponent } from './hoodies/hoodies.component';
 
 
 @NgModule({
@@ -44,7 +50,13 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
     OurCustomersComponent,
     FooterComponent,
     BestSellersComponent,
-    TestimonialsComponent
+    TestimonialsComponent,
+    TShirtsComponent,
+    PolysterTshirtsComponent,
+    CottonTshirtsComponent,
+    PoloTshirtsComponent,
+    ShirtsComponent,
+    HoodiesComponent
   ],
   imports: [
     BrowserModule,
