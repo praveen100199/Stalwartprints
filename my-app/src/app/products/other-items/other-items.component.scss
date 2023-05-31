@@ -1,0 +1,25 @@
+.border{
+    width: 160px;
+    height: 5px;
+    background: #6ab04c;
+    margin: 26px auto;
+	margin-top: -10px;
+}
+
+img{
+    height: 320px;
+}
+
+.options button{
+    text-align: center;
+    justify-content: center;
+}
+
+.options{
+    font-size: large;
+    font-weight: 200;
+    font-family: inherit;
+    background-color: rgba(203, 206, 210,0.5);
+    margin: 20px auto;
+    display: flex;
+}

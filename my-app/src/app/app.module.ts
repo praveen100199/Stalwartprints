@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './common/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
-import { CarouselComponent } from './carousel/carousel.component';
+import { CarouselComponent } from './dashboard/carousel/carousel.component';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
@@ -22,22 +22,24 @@ import { MdbScrollspyModule } from 'mdb-angular-ui-kit/scrollspy';
 import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
-import { CatalogueComponent } from './catalogue/catalogue.component';
-import { AccessoriesComponent } from './accessories/accessories.component';
-import { HighlightsComponent } from './highlights/highlights.component';
-import { OurCustomersComponent } from './our-customers/our-customers.component';
-import { FooterComponent } from './footer/footer.component';
+import { CatalogueComponent } from './dashboard/catalogue/catalogue.component';
+import { AccessoriesComponent } from './dashboard/accessories/accessories.component';
+import { HighlightsComponent } from './dashboard/highlights/highlights.component';
+import { OurCustomersComponent } from './dashboard/our-customers/our-customers.component';
+import { FooterComponent } from './common/footer/footer.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { BestSellersComponent } from './best-sellers/best-sellers.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { TShirtsComponent } from './t-shirts/t-shirts.component';
-import { PolysterTshirtsComponent } from './t-shirts/polyster-tshirts/polyster-tshirts.component';
-import { CottonTshirtsComponent } from './t-shirts/cotton-tshirts/cotton-tshirts.component';
-import { PoloTshirtsComponent } from './t-shirts/polo-tshirts/polo-tshirts.component';
-import { ShirtsComponent } from './shirts/shirts.component';
-import { HoodiesComponent } from './hoodies/hoodies.component';
-import { OtherItemsComponent } from './accessories/other-items/other-items.component';
+import { BestSellersComponent } from './dashboard/best-sellers/best-sellers.component';
+import { TestimonialsComponent } from './dashboard/testimonials/testimonials.component';
+import { PolysterTshirtsComponent } from './products/polyster-tshirts/polyster-tshirts.component';
+import { CottonTshirtsComponent } from './products/cotton-tshirts/cotton-tshirts.component';
+import { PoloTshirtsComponent } from './products/polo-tshirts/polo-tshirts.component';
+import { ShirtsComponent } from './products/shirts/shirts.component';
+import { HoodiesComponent } from './products/hoodies/hoodies.component';
+import { OtherItemsComponent } from './products/other-items/other-items.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CommonComponent } from './common/common.component';
+import { ProductsComponent } from './products/products.component';
 
 
 @NgModule({
@@ -52,13 +54,15 @@ import { OtherItemsComponent } from './accessories/other-items/other-items.compo
     FooterComponent,
     BestSellersComponent,
     TestimonialsComponent,
-    TShirtsComponent,
     PolysterTshirtsComponent,
     CottonTshirtsComponent,
     PoloTshirtsComponent,
     ShirtsComponent,
     HoodiesComponent,
-    OtherItemsComponent
+    OtherItemsComponent,
+    DashboardComponent,
+    CommonComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,

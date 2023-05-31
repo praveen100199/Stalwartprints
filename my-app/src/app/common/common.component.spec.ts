@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TShirtsComponent } from './t-shirts.component';
+import { CommonComponent } from './common.component';
 
-describe('TShirtsComponent', () => {
-  let component: TShirtsComponent;
-  let fixture: ComponentFixture<TShirtsComponent>;
+describe('CommonComponent', () => {
+  let component: CommonComponent;
+  let fixture: ComponentFixture<CommonComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TShirtsComponent ]
+      declarations: [ CommonComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TShirtsComponent);
+    fixture = TestBed.createComponent(CommonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

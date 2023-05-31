@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="offerline">
+      <marquee behavior="alternate" direction="right"> <h3>Use STALWART25 Coupon to get more 25% OFF</h3> </marquee>
+    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="./assets/stalwartlogo.png" alt="LOGO" id="mainlogo"></a>
+        </div>
+        <ul class="nav navbar-nav" style="display: inline" >
+          <!-- T-shirts -->
+          <li>
+            <a>
+              <span mat-button [matMenuTriggerFor]="tshirts" style="cursor: pointer;">T-SHIRTS</span>
+              <mat-menu #tshirts="matMenu">
+                <button mat-menu-item routerLink="/products#polystershirts">
+                  Polyster
+                </button>
+                <button mat-menu-item routerLink="/products#cottontshirts">
+                  Cotton
+                </button>
+                <button mat-menu-item routerLink="/products#polotshirts">
+                  POLO Tshirts
+                </button>
+              </mat-menu>
+            </a>
+          </li>
+          <!-- Shirts -->
+          <li>
+            <a routerLink="/products#shirts">
+              <span mat-button>SHIRTS</span>
+            </a>
+          </li>
+
+          <!-- Hoodies -->
+          <li>
+            <a routerLink="products#hoodies">
+              <span mat-button>HOODIES</span>
+            </a>
+          </li>
+
+          <!-- Accessories -->
+          <li>
+            <a style="cursor: pointer;">
+              <span mat-button routerLink="otheritems">ACCESSORIES</span>
+            </a>
+          </li>
+        </ul>
+        <div class="checkout">
+          <a href="#">
+          <span class="material-symbols-outlined">favorite</span>
+          </a>
+          <a href="#">
+          <span class="material-symbols-outlined">shopping_cart_checkout</span>
+          </a>
+        </div>
+        <div class="logbuttons">
+          <input type="button" value="Login" class="login"/>
+          <input type="button" value="SignUp" class="signup"/>
+        </div>
+      </div>
+    </nav>
+</body>
+</html>
