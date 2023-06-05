@@ -40,6 +40,8 @@ import { OtherItemsComponent } from './products/other-items/other-items.componen
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CommonComponent } from './common/common.component';
 import { ProductsComponent } from './products/products.component';
+import { RegistrationComponent } from './loginDetails/registration/registration.component';
+import { LoginComponent } from './loginDetails/login/login.component';
 
 
 @NgModule({
@@ -63,6 +65,8 @@ import { ProductsComponent } from './products/products.component';
     DashboardComponent,
     CommonComponent,
     ProductsComponent,
+    RegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
