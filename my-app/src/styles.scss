@@ -3,6 +3,9 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+// @import '~ngx-toastr/toastr.css';
+@import 'node_modules/ngx-toastr/toastr';
+
 // Font Awesome
 @import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "@fortawesome/fontawesome-free/scss/solid.scss";
@@ -13,6 +16,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import "mdb-angular-ui-kit/assets/scss/mdb.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+
+
 
 body {
   font-family: "Roboto", sans-serif;

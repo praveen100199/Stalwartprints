@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  showModal = false;
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  closeModal() {
+    this.showModal = false;
+  }
 }

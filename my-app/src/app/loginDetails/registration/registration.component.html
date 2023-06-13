@@ -1,1 +1,73 @@
-<p>registration works!</p>
+<div class="modal">
+    <div class="modal-content">
+    <h2>Registration Form <mat-icon (click)="closeModalClicked()" class="close-button">close</mat-icon></h2>
+    <form  [formGroup]="registrationForm" (ngSubmit)="submitForm()" autocomplete="off">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="username" formControlName="username">
+        <div *ngIf="(registrationForm.controls['username'].touched && registrationForm.controls['username']?.['errors'])" 
+            class="invalid">
+            <div *ngIf="registrationForm.controls['username']?.['errors']?.['required']">
+                Username is required
+            </div>
+            <div *ngIf="registrationForm.controls['username']?.['errors']?.['minlength']">
+                Username Must be atleast 3 letters
+            </div>
+        </div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" formControlName="email">
+        <div *ngIf="(registrationForm.controls['email'].touched && registrationForm.controls['email']?.['errors'])" 
+            class="invalid">
+            <div *ngIf="registrationForm.controls['email']?.['errors']?.['required']">
+                email is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="countryCode">Country Code:</label>
+            <select id="countryCode" name="countrycode" formControlName="countrycode">
+                <option value="" disabled selected>Select Country Code</option>
+                <option *ngFor="let country of countries" [value]="country.code">{{ country.name }} ({{ country.code }})</option>
+            </select>
+        </div>
+        <div *ngIf="(registrationForm.controls['countrycode'].touched && registrationForm.controls['countrycode']?.['errors'])" 
+            class="invalid">
+            <div *ngIf="registrationForm.controls['countrycode']?.['errors']?.['required']">
+                Country Code is required
+            </div>
+        </div>
+    
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phonenumber" formControlName="phonenumber" minlength="10" maxlength="10">
+        <div *ngIf="(registrationForm.controls['phonenumber'].touched && registrationForm.controls['phonenumber']?.['errors'])" 
+            class="invalid">
+            <div *ngIf="registrationForm.controls['phonenumber']?.['errors']?.['required']">
+                phonenumber is required
+            </div>
+            <div *ngIf="registrationForm.controls['phonenumber']?.['errors']?.['minlength']">
+                phonenumber Must be 10 digits
+            </div>
+        </div>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" formControlName="password">
+        <div *ngIf="(registrationForm.controls['password'].touched && registrationForm.controls['password']?.['errors'])" 
+            class="invalid">
+            <div *ngIf="registrationForm.controls['password']?.['errors']?.['required']">
+                strong password is required
+            </div>
+            <div *ngIf="registrationForm.controls['password']?.['errors']?.['minlength']">
+                password Must be atleast 8 letters(caps,small, symbols, letters)
+            </div>
+        </div>
+        
+        <button type="submit" *ngIf="registrationForm.valid" >Submit</button>
+        <!-- <p *ngIf="registrationForm.invalid" class="errorRegisteredMessage">
+            Please enter all correct details
+        </p> -->
+
+    </form>
+    </div>
+</div>

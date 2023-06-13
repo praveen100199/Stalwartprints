@@ -1,20 +1,20 @@
 <section style="background-color: #eee">
   <div class="text-center container py-5">
     <h1 class="mt-4 mb-5 text-center">CUSTOMIZED GIFTS</h1>
-    <div class="options">
-      <button mat-menu-item routerLink="/otheritems#bags">Bags</button>
-      <button mat-menu-item routerLink="/otheritems#bottles">Bottels</button>
-      <button mat-menu-item routerLink="/otheritems#caps">Caps</button>
-      <button mat-menu-item routerLink="/otheritems#pens">Pens</button>
-      <button mat-menu-item routerLink="/otheritems#badges">Badges</button>
-      <button mat-menu-item routerLink="/otheritems#cups">Cups</button>
-      <button mat-menu-item routerLink="/otheritems#idcards">Id Cards</button>
-      <button mat-menu-item routerLink="/otheritems#pillows">Pillows</button>
-      <button mat-menu-item routerLink="/otheritems#stoneframes">Custom Gifts</button>
-    </div>
+    <nav class="options">
+      <button mat-menu-item  (click)="scrollToDiv('caps')">Caps</button>
+      <button mat-menu-item  (click)="scrollToDiv('bags')">Bags</button>
+      <button mat-menu-item  (click)="scrollToDiv('bottles')">Bottels</button>
+      <button mat-menu-item  (click)="scrollToDiv('pens')">Pens</button>
+      <button mat-menu-item  (click)="scrollToDiv('badges')">Badges</button>
+      <button mat-menu-item  (click)="scrollToDiv('cups')">Cups</button>
+      <button mat-menu-item  (click)="scrollToDiv('idcards')">Id Cards</button>
+      <button mat-menu-item  (click)="scrollToDiv('pillows')">Pillows</button>
+      <button mat-menu-item  (click)="scrollToDiv('stoneframes')">Custom Gifts</button>
+    </nav>
 
     <!-- Caps -->
-    <div id="caps">
+    <div id="caps" #caps>
       <div class="col-lg-4 col-md-12 mb-4">
         <div class="card">
           <div
@@ -125,7 +125,7 @@
     </div>
 
     <!-- Bags -->
-    <div id="bags">
+    <div id="bags" #bags>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div
@@ -236,7 +236,7 @@
     </div>
 
     <!-- Bottles -->
-    <div id="bottles">
+    <div id="bottles" #bottles>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
@@ -344,7 +344,7 @@
     </div>
 
     <!-- Pens -->
-    <div id="pens">
+    <div id="pens" #pens>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
@@ -452,7 +452,7 @@
     </div>
 
     <!-- badges -->
-    <div id="badges">
+    <div id="badges" #badges>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
@@ -560,7 +560,7 @@
     </div>
 
     <!-- Cups -->
-    <div id="cups">
+    <div id="cups" #cups>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
@@ -668,7 +668,7 @@
     </div>
 
     <!-- Id cards -->
-    <div id="idcards">
+    <div id="idcards" #idcards>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
@@ -776,7 +776,7 @@
     </div>
 
     <!-- Pillows  -->
-    <div id="pillows">
+    <div id="pillows" #pillows>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
@@ -884,7 +884,7 @@
     </div>
 
     <!-- stone frames -->
-    <div id="stoneframes">
+    <div id="stoneframes" #stoneframes>
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="card">
           <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">

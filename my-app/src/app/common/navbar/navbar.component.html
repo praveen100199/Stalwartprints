@@ -69,9 +69,12 @@
         </div>
         <div class="logbuttons">
           <input type="button" value="Login" class="login"/>
-          <input type="button" value="SignUp" class="signup"/>
+          <input type="button" value="SignUp" class="signup" (click)="openModal()">
+          <app-registration *ngIf="showModal" (closeModal)="closeModal()"></app-registration>
         </div>
       </div>
     </nav>
 </body>
 </html>
+
+

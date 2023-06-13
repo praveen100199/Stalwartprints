@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
+import { ToastrModule } from 'ngx-toastr';
 import { CarouselComponent } from './dashboard/carousel/carousel.component';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -42,6 +43,15 @@ import { CommonComponent } from './common/common.component';
 import { ProductsComponent } from './products/products.component';
 import { RegistrationComponent } from './loginDetails/registration/registration.component';
 import { LoginComponent } from './loginDetails/login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ExternalGatwayhelper } from './@core/helper/http/http.externalGatwayhelper';
+import { HttpClientModule,} from '@angular/common/http';
+
+// import { CoreModule, HttpHelper } from './@core';
+
+const coreServices = [
+  ExternalGatwayhelper
+];
 
 
 @NgModule({
@@ -70,6 +80,7 @@ import { LoginComponent } from './loginDetails/login/login.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
@@ -89,10 +100,18 @@ import { LoginComponent } from './loginDetails/login/login.component';
     MdbTooltipModule,
     MdbValidationModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    ToastrModule.forRoot({
+      timeOut: 3000, // 5 seconds
+      closeButton: true,
+      progressBar: true,
+      positionClass: "toast-top-right"
+    }),
+    FormsModule,
+    ReactiveFormsModule
     
   ],
-  providers: [],
+  providers: [coreServices],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
